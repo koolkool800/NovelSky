@@ -1,7 +1,14 @@
 import Head from 'next/head'
 import Banner from './components/Banner'
+import Button from './components/Button'
+import Listmanga from './components/Listmanga'
 import Navbar from './components/Navbar'
+import styled from 'styled-components'
+import Footer from './components/Footer'
 
+const Div = styled.div`
+background:#1C1C1C;
+`
 
 export default function Home() {
  
@@ -15,6 +22,16 @@ export default function Home() {
       </Head>
       <Navbar />
       <Banner />
+      <Div>
+      <Listmanga />
+      <Listmanga />
+      <Listmanga />
+      <Listmanga />
+      <Listmanga />
+      <Button />
+      </Div>
+      <Footer />
+      
     </div>
   )
 }
