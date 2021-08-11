@@ -8,21 +8,27 @@ import { Containimg } from './Navbar.element'
 const Container = styled.div`
 padding: 4rem 10rem;
 display:flex;
-justify-content: space-between;
-background:grey;
+align-items:center;
+justify-content:center;
+background:black;
 
+`
+const Containspan = styled.div`
+padding-bottom: 1.5rem;
 `
 
 const Containimg2 = styled.div`
 width:100%;
 padding-left:4rem;
 padding-right:0;
+padding-top:2rem;
 `
 const ContainContent = styled.div`
 display:flex;
 flex-direction:column;
 justify-content: space-around;
 padding-right:4rem;
+color:#fff;
 
 `
 const Heading = styled.h1`
@@ -34,7 +40,7 @@ background:#34140D;
 color:#D02810;
 margin-right:1rem;
 text-align:center;
-border-radius:10px;
+border-radius:20px;
 border:none;
 `
 
@@ -46,6 +52,25 @@ align-items:center;
 `
 const Para = styled.p`
 padding-left:5px;
+font-weight:500;
+`
+const Button = styled.button`
+width:30%;
+border-radius:20px;
+border:none;
+color:#fff;
+background:#FA3109;
+padding: 0.5rem 2rem;
+font-size:1rem;
+`
+
+const ParaGraph = styled.p`
+font-size:16px;
+font-weight:350;
+color:#FFFFFF;
+line-height:1.25rem;
+padding-top:0.25rem;
+padding-bottom:0.5rem;
 `
 const Banner = () => {
     return (
@@ -56,7 +81,7 @@ const Banner = () => {
                 </Containimg2>
                 <ContainContent>
                     <Heading >Genius Mage in a Cultivation World</Heading>
-                    <div style={{display:'flex'}}>
+                    <Containspan style={{display:'flex'}}>
                         <Containimg3>
                             <Image src={Chapter} alt="chapter"  />
                         <Para>12 chương</Para>
@@ -67,23 +92,23 @@ const Banner = () => {
                         <Para>1k views</Para>
 
                         </Containimg3>
-                    </div>
+                    </Containspan>
                     <div>
                         <Span>Drama</Span>
                         <Span>Fanstastic</Span>
                         <Span>Romance</Span>
                     </div>
                     <div>
-                        <p>
+                        <ParaGraph>
                         Layn's life was relatively simple. Married to a princess, working as the top archmage of the country... Everything would be great if he never learned that his wife was actually cheating on him!
-                        </p>
-                        <p>
+                        </ParaGraph>
+                        <ParaGraph>
                         Instead of getting his revenge, he put up with the humiliation. For three long years. Three long years he needed to prepare for what would go down in the annals of history as the greatest revenge ever!
-                        </p>
+                        </ParaGraph>
                     </div>
-                    <button >
-                    Đọc ngay
-                    </button>
+                   <Button>
+                       Đọc ngay &#8594;
+                   </Button>
                    
                 </ContainContent>
             </Container>

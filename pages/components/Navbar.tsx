@@ -2,6 +2,14 @@ import React from 'react'
 import Search from '../images/search.png'
 import Image from 'next/image'
 import {MainDiv,LeftMainDiv,Logo,LinkDiv,Link,RightMainDiv,Containimg,Buttonwhite,Button} from '../components/Navbar.element'
+import Arrowdown from '../images/arrowdown.png'
+import NS from '../images/NovelSky.png'
+
+import styled from 'styled-components'
+const Span = styled.span`
+padding:0 0.5rem;
+
+`
 
 const Navbar = () => {
     return (
@@ -9,11 +17,13 @@ const Navbar = () => {
         
         <MainDiv>
             <LeftMainDiv>
-                <Logo>NovelSky</Logo>
+                <Image src={NS} alt="lgo" />
                 <LinkDiv>
                     <div>
-                        {/* dropdown  */}
-                        Thể loại
+                        <Link>Thể loại</Link>
+                        <Span> 
+                            <Image src={Arrowdown} alt="arrdown"  />
+                        </Span>
                     </div>
                     <Link href="#">Sáng tác</Link>
                     <Link href="#">Thư viện</Link>

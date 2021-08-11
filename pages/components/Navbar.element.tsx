@@ -10,7 +10,7 @@ export const MainDiv = styled.nav`
 display:flex;
 color:#fff;
 justify-content:space-between;
-background:#222222;
+background:black;
 padding:1rem 6rem;
 
 `
@@ -42,18 +42,18 @@ margin-right:1rem;
 `
 
 export const Button = styled.button`
-background:#222222;
-border-radius:5px;
+background:#D02810;
+border-radius:20px;
 color:#fff;
 border:none;
 margin:0 1rem;
-border:1px solid white;
 font-weight:700;
-padding:0.25rem 2rem;
+padding:0.5rem 2rem;
 `
 
 export const Buttonwhite = styled(Button)`
-background:#fff;
-color:black;
+background:black;
+color:#fff;
+border :2px solid white;
 
 `
