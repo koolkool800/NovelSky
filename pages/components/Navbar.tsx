@@ -10,14 +10,19 @@ const Span = styled.span`
 padding:0 0.5rem;
 
 `
+const Div = styled.div`
 
+`
 const Navbar = () => {
     return (
         <>
         
         <MainDiv>
             <LeftMainDiv>
+                <div>
                 <Image src={NS} alt="lgo" />
+
+                </div>
                 <LinkDiv>
                     <div>
                         <Link>Thể loại</Link>

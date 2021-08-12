@@ -5,6 +5,7 @@ import Listmanga from './components/Listmanga'
 import Navbar from './components/Navbar'
 import styled from 'styled-components'
 import Footer from './components/Footer'
+import Slider from './components/Slider'
 
 const Div = styled.div`
 background:#1C1C1C;
@@ -22,6 +23,7 @@ export default function Home() {
       </Head>
       <Navbar />
       <Banner />
+      <Slider />
       <Div>
       <Listmanga />
       <Listmanga />
